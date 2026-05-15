@@ -23,7 +23,6 @@ def clean():
     if os.path.isfile(SPEC_FILE):
         os.remove(SPEC_FILE)
 
-
 def build():
     cmd = [
         sys.executable, '-m', 'PyInstaller',
