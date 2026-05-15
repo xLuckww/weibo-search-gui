@@ -15,7 +15,6 @@ BUILD_DIR = os.path.join(PROJECT_DIR, 'build')
 SPEC_FILE = os.path.join(PROJECT_DIR, 'weibo_search_gui.spec')
 EXE_NAME = '微博搜索爬虫'
 
-
 def clean():
     for d in [DIST_DIR, BUILD_DIR]:
         if os.path.isdir(d):
