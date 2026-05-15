@@ -1,6 +1,6 @@
 # 微博搜索爬虫 GUI
 
-基于 [dataabc/weibo-search](https://github.com/dataabc/weibo-search) 二次开发，为其添加了图形界面，让不熟悉代码的用户也能轻松使用。
+本项目基于 [dataabc/weibo-search](https://github.com/dataabc/weibo-search) 二次开发，为其添加了图形界面，让不熟悉代码的用户也能轻松使用。
 
 ## 功能
 
@@ -20,15 +20,17 @@
 | 系统 | 文件 | 说明 |
 |------|------|------|
 | Windows | `微博搜索爬虫.exe` | 双击运行，无需安装 |
-| macOS | `微博搜索爬虫.app` | 双击运行，首次需右键→打开 |
+| macOS | `微博搜索爬虫.dmg` | 双击运行，将app文件拖入Applications |
 
 ### 获取 Cookie
 
-1. 用浏览器登录 [weibo.com](https://weibo.com)
+1. 打开浏览器登录 [weibo.com](https://weibo.com)
 2. 按 `F12` 打开开发者工具
 3. 切换到「网络」(Network) 标签
-4. 刷新页面，点击任意一个请求
+4. 刷新页面，点击左侧的weibo.com
 5. 在请求头 (Request Headers) 中找到 `Cookie`，整行复制
+<img width="1270" height="758" alt="image" src="https://github.com/user-attachments/assets/bc70ce32-8acb-466f-b3f7-ec03fcd85785" />
+
 6. 粘贴到程序的 Cookie 输入框中
 
 ### 操作步骤
@@ -100,3 +102,6 @@ python3 build_mac.py
 ## 致谢
 
 本项目基于 [dataabc/weibo-search](https://github.com/dataabc/weibo-search) 开发，感谢原作者的贡献。
+
+## 幕后故事
+最开始使用 [dataabc/weibo-search](https://github.com/dataabc/weibo-search)是为了我写小论文的数据提供工具支持，但是每次使用时都要重新去setting文件修改配置，并且在我把文件发给我的同门和室友他们使用时，考虑到他们没有编程基础，并且部署环境什么的比较麻烦，遂二次开发出gui界面并打包成mac和win可以直接使用的软件，方便没有编程基础的人也可以直接使用。
